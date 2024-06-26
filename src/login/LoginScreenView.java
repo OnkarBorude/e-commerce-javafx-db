@@ -3,6 +3,7 @@ package login;
 import java.net.URL;
 import java.nio.file.Paths;
 
+import common.StageHolder;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,13 +17,14 @@ public class LoginScreenView extends Application {
 	}
 
 	@Override
-	public void start(Stage stage) throws Exception {
-		URL fxmlUrl=Paths.get("C:\\Users\\onkar\\eclipse-workspace\\e-commerce-javafx-db\\src\\login\\LoginScreens.fxml").toUri().toURL();
+	public void start(Stage stageOfJavaFx) throws Exception {
+		StageHolder.stage=stageOfJavaFx;
+		URL fxmlUrl=Paths.get("C:\\Users\\onkar\\eclipse-workspace\\e-commerce-javafx-db\\src\\login\\LoginScreenForEcommerce.fxml").toUri().toURL();
 		Parent actorGroup=FXMLLoader.load(fxmlUrl);
-		stage.setTitle("Login Screen");
-		Scene scene=new Scene(actorGroup, 1150, 675);
-		stage.setScene(scene);
-		stage.show();
+		StageHolder.stage.setTitle("Login Screen");
+		Scene scene=new Scene(actorGroup, 1400, 750);
+		StageHolder.stage.setScene(scene);
+		StageHolder.stage.show();
 		
 	}
 }

@@ -1,9 +1,9 @@
 package login;
 
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import common.DBUtil;
+import home.HomeScreenView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -20,7 +20,7 @@ public class LoginScreenController {
 	@FXML
 	Label errorMessege;
 	
-	public void loginButtonClicked() throws SQLException {
+	public void loginButtonClicked() throws Exception {
 		
 		String username=userName.getText();
 		String passwords=password.getText();
@@ -28,8 +28,7 @@ public class LoginScreenController {
 		String selectQuery="select * from user where first_name= '"+username+"' && password='"+passwords+"' ";
 		ResultSet resultset=DBUtil.selectQuery(selectQuery);
 		if(resultset.next()) {
-			errorMessege.setText("Login Successfully !!");
-			errorMessege.setTextFill(Color.GREEN);
+			HomeScreenView.show();
 		}
 		else {
 			errorMessege.setText("Login Failed!!");
