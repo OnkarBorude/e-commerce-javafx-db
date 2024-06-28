@@ -9,8 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 
-public class LoginScreenController {
-	
+public class LoginScreenControl {
 	@FXML
 	TextField userName;
 	

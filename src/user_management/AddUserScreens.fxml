@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userManagement.AddUserController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user_management.AddUserController">
    <children>
       <Label alignment="CENTER" layoutX="659.0" layoutY="156.0" prefHeight="45.0" prefWidth="340.0" text="Enter User Details..">
          <font>
@@ -101,10 +101,22 @@
             <InnerShadow />
          </effect>
       </TextField>
-      <Button onAction="#submitUserClicked" fx:id="submitAddUser" layoutX="876.0" layoutY="729.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="248.0" text="SUBMIT">
+      <Button fx:id="submitAddUser" layoutX="1028.0" layoutY="717.0" mnemonicParsing="false" onAction="#submitUserClicked" prefHeight="44.0" prefWidth="202.0" text="SUBMIT">
          <font>
-            <Font size="20.0" />
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="771.0" layoutY="720.0" mnemonicParsing="false" onAction="#backButtons" prefHeight="17.0" prefWidth="168.0" text="Back">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="18.0" />
          </font>
       </Button>
+      <Label fx:id="msgatEnd" alignment="CENTER" layoutX="846.0" layoutY="761.0" prefHeight="21.0" prefWidth="254.0" />
    </children>
 </AnchorPane>

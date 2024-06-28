@@ -1,25 +1,26 @@
 package home;
 
-import productManagement.AddProductViewer;
-import userManagement.AddUserViewer;
+import login.LoginScreenViewer;
+import product_management.ProductManagementViewer;
+
+import user_management.UserManagementViewer;
+
 
 public class HomeScreenController {
 	
 	
 	
 	public void addUserClicked() {
-		AddUserViewer.addUserClickButton();
+		UserManagementViewer.userManageShow();
 		
 	}
 	
 	public void addProductClicked() {
-		AddProductViewer.addProductClickedButton();
+		ProductManagementViewer.productmanageShow();
 	}
 	
 	public void exitHomeScreenClicked() {
-		System.out.println("Exiting Home Screen");
-		
-		
+		LoginScreenViewer.show();
 	}
 
 }

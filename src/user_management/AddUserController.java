@@ -1,10 +1,11 @@
-package userManagement;
+package user_management;
 
 import java.sql.SQLException;
 
 import common.DBUtil;
 import home.HomeScreenView;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class AddUserController {
@@ -29,6 +30,9 @@ public class AddUserController {
 	@FXML
 	TextField rePassword;
 	
+	@FXML
+	Label msgatEnd;
+	
 	public void submitUserClicked() throws SQLException {
 		String fnames=fname.getText();
 		String lnames=lname.getText();
@@ -41,12 +45,16 @@ public class AddUserController {
 			
 			String query="insert into user(first_name, last_name, gender, age, email, password) values('"+fnames+"','"+lnames+"','"+genders+"','"+ages+"','"+emails+"','"+passwords+"')";
 			DBUtil.executeQuery(query);
-			System.out.println("User Added Successfully!!");
+			msgatEnd.setText("User Added Successfully");
 		}
 		else {
-			System.out.println("User Additon Failed");
+			msgatEnd.setText("User Additon Failed");
+			
 		}
-		HomeScreenView.show();
+	}
+	
+	public void backButtons() {
+		UserManagementViewer.userManageShow();
 	}
 	
 	

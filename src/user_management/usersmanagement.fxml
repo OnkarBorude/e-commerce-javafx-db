@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user_management.UserManagementController">
+   <children>
+      <Label alignment="CENTER" layoutX="659.0" layoutY="156.0" prefHeight="45.0" prefWidth="451.0" text="What Would You Like To Do Today?">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="820.0" fitWidth="636.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/loginimage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="132.0" opacity="0.78" prefHeight="46.0" prefWidth="369.0" text="E-Commerce Management" textFill="#6f00ff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="749.0" layoutY="59.0" prefHeight="50.0" prefWidth="524.0" text="Welcome To User Management">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="999.0" layoutY="118.0" startX="-100.0" strokeWidth="2.0" />
+      <Button onAction="#adduserclickedbutt" fx:id="createUser" layoutX="875.0" layoutY="227.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="1.Create User">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#updateUserClickeds" fx:id="updateUser" layoutX="875.0" layoutY="323.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="2.Update User">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#searchUserClicked" fx:id="searchUser" layoutX="875.0" layoutY="414.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="3.Search User">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#deleteUserClicked" fx:id="deleteUser" layoutX="875.0" layoutY="505.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="4.Delete User">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="viewUser" layoutX="875.0" layoutY="602.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="5.View User">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#exitUserManagement" fx:id="exitUserManagement" layoutX="875.0" layoutY="716.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="6.Exit">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

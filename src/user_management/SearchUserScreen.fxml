@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user_management.UpdateUserController">
+   <children>
+      <Label alignment="CENTER" layoutX="644.0" layoutY="171.0" prefHeight="45.0" prefWidth="338.0" text="Enter User Name To Search: ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="820.0" fitWidth="636.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/loginimage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="132.0" opacity="0.78" prefHeight="46.0" prefWidth="369.0" text="E-Commerce Management" textFill="#6f00ff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="861.0" layoutY="38.0" prefHeight="50.0" prefWidth="261.0" text="Search User">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="999.0" layoutY="118.0" startX="-100.0" strokeWidth="2.0" />
+      <TextField fx:id="searchName" layoutX="999.0" layoutY="176.0" prefHeight="36.0" prefWidth="236.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button layoutX="831.0" layoutY="240.0" mnemonicParsing="false" onAction="#searchUserClicked" prefHeight="31.0" prefWidth="289.0" text="Search User">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="855.0" layoutY="672.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="192.0" text="Back">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="706.0" layoutY="334.0" prefHeight="45.0" prefWidth="155.0" text="First Name:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="706.0" layoutY="387.0" prefHeight="45.0" prefWidth="155.0" text="Last Name:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="693.0" layoutY="438.0" prefHeight="45.0" prefWidth="155.0" text="Gender:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="676.0" layoutY="483.0" prefHeight="45.0" prefWidth="155.0" text="Age:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="684.0" layoutY="528.0" prefHeight="45.0" prefWidth="155.0" text="Email:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="700.0" layoutY="583.0" prefHeight="45.0" prefWidth="155.0" text="Password:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fname" layoutX="914.0" layoutY="339.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="lname" layoutX="914.0" layoutY="392.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="gender" layoutX="914.0" layoutY="443.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="age" layoutX="914.0" layoutY="488.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="email" layoutX="914.0" layoutY="533.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="password" layoutX="914.0" layoutY="587.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label fx:id="searchserrorMsg" alignment="CENTER" layoutX="882.0" layoutY="299.0" prefHeight="21.0" prefWidth="202.0" />
+   </children>
+</AnchorPane>
