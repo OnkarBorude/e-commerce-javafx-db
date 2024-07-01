@@ -1,4 +1,4 @@
-package product_management;
+package update_product;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,9 +7,10 @@ import common.DBUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import product_management.ProductManagement;
+
 
 public class UpdateProductController {
-	
 	@FXML
 	TextField updateName;
 	
@@ -53,7 +54,7 @@ public class UpdateProductController {
 	}
 	
 	public void backButtonClick() {
-		ProductManagementViewer.productmanageShow();
+		new ProductManagement().show();
 	}
 
 }

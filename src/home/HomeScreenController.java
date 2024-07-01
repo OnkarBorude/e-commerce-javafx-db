@@ -1,26 +1,22 @@
 package home;
 
-import login.LoginScreenViewer;
-import product_management.ProductManagementViewer;
-
-import user_management.UserManagementViewer;
+import login.LoginScreen;
+import product_management.ProductManagement;
+import user_management.UserManagement;
 
 
 public class HomeScreenController {
-	
-	
-	
 	public void addUserClicked() {
-		UserManagementViewer.userManageShow();
+		new UserManagement().show();
 		
 	}
 	
 	public void addProductClicked() {
-		ProductManagementViewer.productmanageShow();
+		new ProductManagement().show();
 	}
 	
 	public void exitHomeScreenClicked() {
-		LoginScreenViewer.show();
+	   new LoginScreen().show();
 	}
 
 }

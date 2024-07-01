@@ -3,13 +3,13 @@ package login;
 import java.sql.ResultSet;
 
 import common.DBUtil;
-import home.HomeScreenView;
+import home.HomeScreen;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 
-public class LoginScreenControl {
+public class LoginScreenController {
 	@FXML
 	TextField userName;
 	
@@ -27,7 +27,7 @@ public class LoginScreenControl {
 		String selectQuery="select * from user where first_name= '"+username+"' && password='"+passwords+"' ";
 		ResultSet resultset=DBUtil.selectQuery(selectQuery);
 		if(resultset.next()) {
-			HomeScreenView.show();
+			new HomeScreen().show();
 		}
 		else {
 			errorMessege.setText("Login Failed!!");

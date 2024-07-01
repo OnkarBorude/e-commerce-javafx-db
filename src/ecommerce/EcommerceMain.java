@@ -1,18 +1,12 @@
-package main;
-
-import java.net.URL;
-import java.nio.file.Paths;
+package ecommerce;
 
 import common.StageHolder;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-import login.LoginScreenViewer;
+import login.LoginScreen;
 
-public class LoginScreenView extends Application {
-	
+
+public class EcommerceMain extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -20,7 +14,7 @@ public class LoginScreenView extends Application {
 	@Override
 	public void start(Stage stageOfJavaFx) throws Exception {
 		StageHolder.stage=stageOfJavaFx;
-		LoginScreenViewer.show();
-		
+		StageHolder.stage.setTitle("E-Commerce");
+		new LoginScreen().show();
 	}
 }

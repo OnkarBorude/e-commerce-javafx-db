@@ -1,4 +1,4 @@
-package user_management;
+package search_user;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,9 +7,9 @@ import common.DBUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import user_management.UserManagement;
 
 public class SearchUserController {
-	
 	@FXML
 	TextField searchName;
 	
@@ -60,7 +60,7 @@ public class SearchUserController {
 	}
 	
 	public void backButton() {
-		UserManagementViewer.userManageShow();
+		new UserManagement().show();
 	}
 
 }

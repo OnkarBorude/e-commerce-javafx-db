@@ -1,15 +1,15 @@
-package product_management;
+package add_product;
 
 import java.sql.SQLException;
 
 import common.DBUtil;
-import home.HomeScreenView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import product_management.ProductManagement;
+
 
 public class AddProductController {
-	
 	@FXML
 	TextField pname;
 	
@@ -34,8 +34,6 @@ public class AddProductController {
 	}
 	
 	public void backButton() {
-		ProductManagementViewer.productmanageShow();
+		new ProductManagement().show();
 	}
-		
-
 }

@@ -1,12 +1,12 @@
-package user_management;
+package add_user;
 
 import java.sql.SQLException;
 
 import common.DBUtil;
-import home.HomeScreenView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import user_management.UserManagement;
 
 public class AddUserController {
 	@FXML
@@ -54,10 +54,7 @@ public class AddUserController {
 	}
 	
 	public void backButtons() {
-		UserManagementViewer.userManageShow();
+		new UserManagement().show();
 	}
-	
-	
-	
-	
+
 }

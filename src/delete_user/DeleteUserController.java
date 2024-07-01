@@ -1,4 +1,4 @@
-package user_management;
+package delete_user;
 
 import java.sql.SQLException;
 
@@ -6,15 +6,15 @@ import common.DBUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import user_management.UserManagement;
 
 public class DeleteUserController {
-	
+
 	@FXML
 	TextField deleteName;
 	
 	@FXML
 	Label deleteerrorMsg;
-	
 	
 	public void deleteButtonClicked() throws SQLException {
 		String deleteNames=deleteName.getText();
@@ -24,7 +24,7 @@ public class DeleteUserController {
 	}
 	
 	public void backButton() {
-		UserManagementViewer.userManageShow();
+		new UserManagement().show();
 	}
 
 }

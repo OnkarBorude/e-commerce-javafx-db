@@ -1,28 +1,34 @@
 package user_management;
 
-import home.HomeScreenView;
-
+import add_user.AddUser;
+import delete_user.DeleteUser;
+import home.HomeScreen;
+import search_user.SearchUser;
+import update_user.UpdateUser;
 
 public class UserManagementController {
-	
 	public void adduserclickedbutt() {
-		UserManagementViewer.addUserClickButton();
+		new AddUser().show();
 	}
 	
 	public void updateUserClickeds() {
-		UserManagementViewer.updateUserShow();
+		new UpdateUser().show();
+
 	}
 	
 	public void searchUserClicked() {
-		UserManagementViewer.searchUserShow();
+		new SearchUser().show();
+
 	}
 	
 	public void deleteUserClicked() {
-		UserManagementViewer.deleteUserShow();
+		new DeleteUser().show();
+
 	}
 	
 	public void exitUserManagement() {
-		HomeScreenView.show();
+		new HomeScreen().show();
+
 	}
 
 }
