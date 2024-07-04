@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product_management.ProductManagementController">
+   <children>
+      <Label alignment="CENTER" layoutX="659.0" layoutY="156.0" prefHeight="45.0" prefWidth="451.0" text="What Would You Like To Do Today?">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="820.0" fitWidth="636.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/loginimage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="132.0" opacity="0.78" prefHeight="46.0" prefWidth="369.0" text="E-Commerce Management" textFill="#6f00ff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="749.0" layoutY="59.0" prefHeight="50.0" prefWidth="524.0" text="Welcome To Product Management">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="999.0" layoutY="118.0" startX="-100.0" strokeWidth="2.0" />
+      <Button onAction="#addproductClickes" fx:id="createProduct" layoutX="863.0" layoutY="236.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="1.Create Product">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#updateProductClick" fx:id="updateProduct" layoutX="863.0" layoutY="325.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="2.Update Product">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#searchProductClick" fx:id="searchProduct" layoutX="863.0" layoutY="416.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="3.Search Product">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#deleteProductClick" fx:id="deleteProduct" layoutX="863.0" layoutY="508.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="4.Delete Product">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="viewProduct" layoutX="863.0" layoutY="602.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="5.View Product">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button onAction="#exitProductManagement" fx:id="exitProductManagement" layoutX="863.0" layoutY="710.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="272.0" text="6.Exit">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

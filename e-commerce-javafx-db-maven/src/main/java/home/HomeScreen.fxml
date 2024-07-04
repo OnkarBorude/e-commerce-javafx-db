@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.HomeScreenController">
+   <children>
+      <Label alignment="CENTER" layoutX="781.0" layoutY="145.0" prefHeight="45.0" prefWidth="483.0" text="What Would You Like To Do Today?">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="addUser" layoutX="825.0" layoutY="280.0" mnemonicParsing="false" onAction="#addUserClicked" prefHeight="69.0" prefWidth="382.0" text="1. User Management">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="addProduct" layoutX="825.0" layoutY="398.0" mnemonicParsing="false" onAction="#addProductClicked" prefHeight="69.0" prefWidth="382.0" text="2.Product Management">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="exit" layoutX="825.0" layoutY="590.0" mnemonicParsing="false" onAction="#exitHomeScreenClicked" prefHeight="69.0" prefWidth="382.0" text="3. Logout">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="820.0" fitWidth="636.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/loginimage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="132.0" opacity="0.78" prefHeight="46.0" prefWidth="369.0" text="E-Commerce Management" textFill="#6f00ff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="868.0" layoutY="59.0" prefHeight="50.0" prefWidth="261.0" text="Home Screen">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="999.0" layoutY="118.0" startX="-100.0" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delete_product.DeleteProductController">
+   <children>
+      <Label alignment="CENTER" layoutX="644.0" layoutY="190.0" prefHeight="45.0" prefWidth="369.0" text="Enter Product Name To Delete: ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="820.0" fitWidth="636.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/loginimage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="132.0" opacity="0.78" prefHeight="46.0" prefWidth="369.0" text="E-Commerce Management" textFill="#6f00ff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="845.0" layoutY="39.0" prefHeight="59.0" prefWidth="289.0" text="Delete Product">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="999.0" layoutY="118.0" startX="-100.0" strokeWidth="2.0" />
+      <TextField fx:id="deleteName" layoutX="1057.0" layoutY="195.0" prefHeight="36.0" prefWidth="236.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button onAction="#deleteButtonClicked" fx:id="deleteProduct" layoutX="838.0" layoutY="286.0" mnemonicParsing="false"  prefHeight="31.0" prefWidth="289.0" text="Delete Product">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="886.0" layoutY="672.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="192.0" text="Back">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="deleteerrorMsg" alignment="CENTER" layoutX="765.0" layoutY="425.0" prefHeight="38.0" prefWidth="469.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

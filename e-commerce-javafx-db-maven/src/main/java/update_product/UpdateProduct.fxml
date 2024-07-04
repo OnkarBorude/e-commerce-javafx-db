@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="update_product.UpdateProductController">
+   <children>
+      <Label alignment="CENTER" layoutX="627.0" layoutY="144.0" prefHeight="45.0" prefWidth="338.0" text="Enter Product Name To Update: ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="820.0" fitWidth="636.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/loginimage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="132.0" opacity="0.78" prefHeight="46.0" prefWidth="369.0" text="E-Commerce Management" textFill="#6f00ff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="837.0" layoutY="39.0" prefHeight="59.0" prefWidth="325.0" text="Update Product">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="999.0" layoutY="118.0" startX="-100.0" strokeWidth="2.0" />
+      <Label alignment="CENTER" layoutX="728.0" layoutY="281.0" prefHeight="45.0" prefWidth="171.0" text="Product Name" textFill="#ff0101">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pname" layoutX="992.0" layoutY="286.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label alignment="CENTER" layoutX="725.0" layoutY="354.0" prefHeight="45.0" prefWidth="202.0" text="Product Quantity" textFill="#ff0101">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pquantity" layoutX="992.0" layoutY="359.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label alignment="CENTER" layoutX="736.0" layoutY="424.0" prefHeight="45.0" prefWidth="155.0" text="Product Price" textFill="#ff0101">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pprice" layoutX="992.0" layoutY="429.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="Updateproduct" layoutX="1041.0" layoutY="548.0" mnemonicParsing="false" onAction="#updateUserClick" prefHeight="44.0" prefWidth="218.0" text="Update Product">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="updateName" layoutX="949.0" layoutY="149.0" prefHeight="36.0" prefWidth="184.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label fx:id="errormsg" alignment="CENTER" layoutX="765.0" layoutY="214.0" prefHeight="35.0" prefWidth="431.0" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitUpProduct" layoutX="1162.0" layoutY="151.0" mnemonicParsing="false" onAction="#submitProductClicked" prefHeight="31.0" prefWidth="139.0" text="Submit">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label fx:id="errormsgAtEnd" alignment="CENTER" layoutX="812.0" layoutY="667.0" prefHeight="21.0" prefWidth="338.0" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Button layoutX="741.0" layoutY="548.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="31.0" prefWidth="171.0" text="Back">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

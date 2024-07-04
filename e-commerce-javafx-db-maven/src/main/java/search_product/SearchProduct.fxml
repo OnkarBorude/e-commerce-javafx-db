@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1314.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="search_product.SearchProductController">
+   <children>
+      <Label alignment="CENTER" layoutX="644.0" layoutY="171.0" prefHeight="45.0" prefWidth="369.0" text="Enter Product Name To Search: ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="820.0" fitWidth="636.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/loginimage.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="132.0" opacity="0.78" prefHeight="46.0" prefWidth="369.0" text="E-Commerce Management" textFill="#6f00ff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="861.0" layoutY="38.0" prefHeight="50.0" prefWidth="261.0" text="Update User">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="999.0" layoutY="118.0" startX="-100.0" strokeWidth="2.0" />
+      <TextField fx:id="searchName" layoutX="1047.0" layoutY="176.0" prefHeight="44.0" prefWidth="261.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchProduct" layoutX="831.0" layoutY="240.0" mnemonicParsing="false" onAction="#searchproductClicked" prefHeight="31.0" prefWidth="289.0" text="Search Product">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="855.0" layoutY="672.0" mnemonicParsing="false" onAction="#backButton" prefHeight="44.0" prefWidth="192.0" text="Back">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="701.0" layoutY="376.0" prefHeight="45.0" prefWidth="155.0" text="Product Name:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="692.0" layoutY="461.0" prefHeight="45.0" prefWidth="184.0" text="Product Quantity:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="675.0" layoutY="547.0" prefHeight="45.0" prefWidth="192.0" text="Product Price:" textFill="#ff0101">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pname" layoutX="928.0" layoutY="380.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="pquantity" layoutX="928.0" layoutY="465.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="pprice" layoutX="928.0" layoutY="551.0" prefHeight="36.0" prefWidth="293.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="searchserrorMsg" alignment="CENTER" layoutX="755.0" layoutY="310.0" prefHeight="28.0" prefWidth="415.0">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
